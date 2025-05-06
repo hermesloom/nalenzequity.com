@@ -49,7 +49,7 @@ export default function Imprint() {
             <p>
               Telefon: (auf Anfrage)
               <br />
-              E-Mail: julian@nalenzequity.com
+              E-Mail: julian.nalenz@nalenzequity.com
             </p>
           </section>
 
