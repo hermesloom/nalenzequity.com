@@ -1,102 +1,310 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col min-h-screen bg-background text-foreground">
+      {/* Hero Section */}
+      <section className="relative w-full py-24 bg-gradient-to-r from-[#f8fafc] to-[#eef2ff] dark:from-[#0f172a] dark:to-[#1e293b]">
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+              Investing in{" "}
+              <span className="text-primary">Visionary Management</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-foreground/80">
+              Nalenz Equity partners with forward-thinking leaders to build
+              transformative companies in Europe and beyond.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="#portfolio"
+                className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium px-6 py-3 text-base"
+              >
+                View Portfolio
+              </Link>
+              <Link
+                href="#about"
+                className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium px-6 py-3 text-base"
+              >
+                About Us
+              </Link>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <div className="absolute right-0 bottom-0 w-1/3 h-full opacity-10 bg-pattern-grid"></div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            About Nalenz Equity
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-lg mb-6">
+                Based in Germany, Nalenz Equity focuses on high-profit
+                investments into companies with visionary management. We
+                identify opportunities where innovation meets market needs,
+                creating sustainable value for all stakeholders.
+              </p>
+              <p className="text-lg mb-6">
+                Our investment approach centers on partnering with
+                forward-thinking leaders who are transforming their industries
+                through innovation, technology, and sustainable practices.
+              </p>
+              <p className="text-lg">
+                Through direct investments and our subsidiaries, we support
+                growth-oriented companies that demonstrate exceptional potential
+                to lead their respective markets.
+              </p>
+            </div>
+            <div className="bg-muted rounded-xl p-8">
+              <h3 className="text-xl font-semibold mb-6">
+                Our Investment Focus
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="mr-4 mt-1 bg-primary/10 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-primary"
+                    >
+                      <path d="m9 12 2 2 4-4" />
+                      <circle cx="12" cy="12" r="10" />
+                    </svg>
+                  </div>
+                  <span>
+                    Europe's leading communication path between financial
+                    institutions and governments
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <div className="mr-4 mt-1 bg-primary/10 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-primary"
+                    >
+                      <path d="m9 12 2 2 4-4" />
+                      <circle cx="12" cy="12" r="10" />
+                    </svg>
+                  </div>
+                  <span>Companies that solve genuine pains</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="mr-4 mt-1 bg-primary/10 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-primary"
+                    >
+                      <path d="m9 12 2 2 4-4" />
+                      <circle cx="12" cy="12" r="10" />
+                    </svg>
+                  </div>
+                  <span>System-level optimization of bureaucracy</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sustainability Section */}
+      <section className="py-20 px-6 bg-secondary/20">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            Sustainability Commitment
+          </h2>
+          <p className="text-lg mb-10">
+            Our sustainability goals are continuously exceeded, driving positive
+            impact across our portfolio. We're proud members of the Financial
+            Health Initiative, working to create a more equitable financial
+            ecosystem.
+          </p>
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 text-primary font-medium">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="mr-2"
+            >
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+              <path d="m7 11 2 2 6-6" />
+            </svg>
+            Member of the Financial Health Initiative
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section id="portfolio" className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
+            Investment Portfolio
+          </h2>
+
+          {/* Featured Investment - Divizend */}
+          <div className="mb-20 bg-card rounded-2xl p-8 shadow-sm">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Divizend</h3>
+                <p className="text-lg mb-6">
+                  Market leader in withholding tax reclaims for several years,
+                  serving Europe's largest custodians. Divizend continuously
+                  strives towards building intelligent communication channels
+                  between institutions, wealth and humans.
+                </p>
+                <h4 className="font-semibold text-lg mb-3">
+                  Latest Innovation:
+                </h4>
+                <p className="text-lg mb-6">
+                  A "data highway between the market and the state" that solves
+                  not only a long-fathomed EU directive, but also provides the
+                  base for more democratic, accessible communication structures
+                  between humans and institutions.
+                </p>
+              </div>
+              <div className="bg-muted rounded-xl p-8 h-full flex flex-col justify-center">
+                <div className="mb-6">
+                  <div className="font-mono text-sm text-muted-foreground mb-2">
+                    KEY ACHIEVEMENTS
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>Market leader in withholding tax reclaims</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>Trusted by Europe's largest custodians</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>Pioneering EU directive compliance solutions</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>Democratizing institutional communications</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="mt-auto pt-16 pb-8 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 pb-12 border-b border-border mb-8">
+            <div>
+              <h3 className="text-xl font-bold mb-6">Nalenz Equity</h3>
+              <p className="text-foreground/70 max-w-md">
+                Investing in visionary management and innovative companies that
+                are transforming industries and creating sustainable value.
+              </p>
+            </div>
+            <div className="flex flex-col md:items-end">
+              <h3 className="text-xl font-bold mb-6">Our Foundations</h3>
+              <div className="space-y-4">
+                <a
+                  href="https://www.henophilia.ventures/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:text-primary transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="mr-2"
+                  >
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <path d="M15 3h6v6" />
+                    <path d="m10 14 11-11" />
+                  </svg>
+                  Funded by Henophilia Ventures
+                </a>
+                <a
+                  href="https://hermesloom.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:text-primary transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="mr-2"
+                  >
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <path d="M15 3h6v6" />
+                    <path d="m10 14 11-11" />
+                  </svg>
+                  Incubated within Hermes' Loom
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="text-center text-foreground/50 text-sm font-mono">
+            <p className="mb-4">
+              "Life is like a zipper. Dream and reality always come together,
+              but this needs to happen in the right order."
+            </p>
+            <div className="flex justify-center gap-6 mt-6">
+              <Link
+                href="/imprint"
+                className="text-foreground/70 hover:text-primary transition-colors"
+              >
+                Impressum
+              </Link>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );
