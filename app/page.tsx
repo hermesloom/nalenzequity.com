@@ -347,7 +347,7 @@ export default function Home() {
           <div className="text-center text-foreground/50 text-sm font-mono">
             <p className="mb-4">
               "Life is like a zipper. Dream and reality always come together,
-              but this needs to happen in the right order."
+              but need to do so in the right order."
             </p>
             <div className="flex justify-center gap-6 mt-6">
               <Link
