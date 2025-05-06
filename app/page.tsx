@@ -174,7 +174,7 @@ export default function Home() {
           </h2>
 
           {/* Featured Investment - Divizend */}
-          <div className="mb-20 bg-card rounded-2xl p-8 shadow-sm">
+          <div className="mb-16 bg-card rounded-2xl p-8 shadow-sm">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-bold mb-4">Divizend</h3>
@@ -221,6 +221,61 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Featured Investment - Henophilia Ventures */}
+          <div className="mb-20 bg-card rounded-2xl p-8 shadow-sm">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Henophilia Ventures</h3>
+                <p className="text-lg mb-6">
+                  Pioneering a radical reimagining of startup economics,
+                  Henophilia engineers interconnected venture ecosystems
+                  designed for resilience and sustainability. Each investment
+                  cycle creates a self-reinforcing system of multiple startups
+                  that function as a cohesive economic unit.
+                </p>
+                <h4 className="font-semibold text-lg mb-3">
+                  Systemic Approach:
+                </h4>
+                <p className="text-lg mb-6">
+                  Rather than isolated growth-optimized entities, Henophilia
+                  builds interdependent networks with shared infrastructure,
+                  governance, and circular value flows—creating economic
+                  infrastructure rebuilt from first principles.
+                </p>
+              </div>
+              <div className="bg-muted rounded-xl p-8 h-full flex flex-col justify-center">
+                <div className="mb-6">
+                  <div className="font-mono text-sm text-muted-foreground mb-2">
+                    CORE INNOVATIONS
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>
+                        Cohort-based venture development (5-10 interconnected
+                        startups)
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>Structural design of circular value flows</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>Purpose-aligned returns without exit pressure</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>
+                        Steward ownership and cooperative governance models
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -236,7 +291,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col md:items-end">
-              <h3 className="text-xl font-bold mb-6">Our Foundations</h3>
+              <h3 className="text-xl font-bold mb-6">Connections</h3>
               <div className="space-y-4">
                 <a
                   href="https://www.henophilia.ventures/"
