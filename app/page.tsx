@@ -51,12 +51,14 @@ export default function Home() {
               <p className="text-lg mb-6">
                 Our investment approach centers on partnering with
                 forward-thinking leaders who are transforming their industries
-                through innovation, technology, and sustainable practices.
+                through innovation, technology, sustainable practices, and
+                cultural value creation.
               </p>
               <p className="text-lg">
                 Through direct investments and our subsidiaries, we support
-                growth-oriented companies that demonstrate exceptional potential
-                to lead their respective markets.
+                growth-oriented companies and creative ventures that demonstrate
+                exceptional potential to lead their respective markets and
+                cultural domains.
               </p>
             </div>
             <div className="bg-muted rounded-xl p-8">
@@ -127,6 +129,26 @@ export default function Home() {
                   </div>
                   <span>System-level optimization of bureaucracy</span>
                 </li>
+                <li className="flex items-start">
+                  <div className="mr-4 mt-1 bg-primary/10 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-primary"
+                    >
+                      <path d="m9 12 2 2 4-4" />
+                      <circle cx="12" cy="12" r="10" />
+                    </svg>
+                  </div>
+                  <span>Cultural capital development with market impact</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -143,7 +165,8 @@ export default function Home() {
             Our sustainability goals are continuously exceeded, driving positive
             impact across our portfolio. We're proud members of the Financial
             Health Initiative, working to create a more equitable financial
-            ecosystem.
+            ecosystem while supporting cultural sustainability through our arts
+            investment program.
           </p>
           <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 text-primary font-medium">
             <svg
@@ -276,6 +299,52 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Featured Investment - Art Portfolio */}
+          <div className="mb-16 bg-card rounded-2xl p-8 shadow-sm">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">
+                  Artistic Capital Ventures
+                </h3>
+                <p className="text-lg mb-6">
+                  Strategic investments across selected visual and performance
+                  artists and creative innovators with demonstrated market
+                  potential and cultural impact. Our arts portfolio functions as
+                  both a value-creation engine and cultural capital development
+                  program.
+                </p>
+              </div>
+              <div className="bg-muted rounded-xl p-8 h-full flex flex-col justify-center">
+                <div className="mb-6">
+                  <div className="font-mono text-sm text-muted-foreground mb-2">
+                    INVESTMENT APPROACH
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>
+                        Long-term artist development with market positioning
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>
+                        Institutional-grade contemporary art acquisition
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-primary">•</div>
+                      <span>
+                        Alternative asset class diversification via creative
+                        capital
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -286,8 +355,9 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold mb-6">Nalenz Equity</h3>
               <p className="text-foreground/70 max-w-md">
-                Investing in visionary management and innovative companies that
-                are transforming industries and creating sustainable value.
+                Investing in visionary management, innovative companies, and
+                creative ventures that are transforming industries and creating
+                sustainable value across both economic and cultural spheres.
               </p>
             </div>
             <div className="flex flex-col md:items-end">
