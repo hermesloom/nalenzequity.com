@@ -168,7 +168,12 @@ export default function Home() {
             ecosystem while supporting cultural sustainability through our arts
             investment program.
           </p>
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 text-primary font-medium">
+          <a
+            href="https://financial-health-initiative.de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-colors"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -185,7 +190,7 @@ export default function Home() {
               <path d="m7 11 2 2 6-6" />
             </svg>
             Member of the Financial Health Initiative
-          </div>
+          </a>
         </div>
       </section>
 
