@@ -251,7 +251,7 @@ export default function Home() {
           </div>
 
           {/* Featured Investment - Henophilia Ventures */}
-          <div className="mb-20 bg-card rounded-2xl p-8 shadow-sm">
+          {/*<div className="mb-20 bg-card rounded-2xl p-8 shadow-sm">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-bold mb-4">Henophilia Ventures</h3>
@@ -303,7 +303,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div>*/}
 
           {/* Featured Investment - Art Portfolio */}
           <div className="mb-16 bg-card rounded-2xl p-8 shadow-sm">
