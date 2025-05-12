@@ -365,7 +365,7 @@ export default function Home() {
                 sustainable value across both economic and cultural spheres.
               </p>
             </div>
-            <div className="flex flex-col md:items-end">
+            {/*<div className="flex flex-col md:items-end">
               <h3 className="text-xl font-bold mb-6">Connections</h3>
               <div className="space-y-4">
                 <a
@@ -417,7 +417,7 @@ export default function Home() {
                   Incubated within Hermes' Loom
                 </a>
               </div>
-            </div>
+            </div>*/}
           </div>
           <div className="text-center text-foreground/50 text-sm font-mono">
             <p className="mb-4">
