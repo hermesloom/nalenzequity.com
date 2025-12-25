@@ -168,29 +168,6 @@ export default function Home() {
             ecosystem while supporting cultural sustainability through our arts
             investment program.
           </p>
-          <a
-            href="https://financial-health-initiative.de/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-colors"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="mr-2"
-            >
-              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
-              <path d="m7 11 2 2 6-6" />
-            </svg>
-            Member of the Financial Health Initiative
-          </a>
         </div>
       </section>
 
@@ -213,13 +190,35 @@ export default function Home() {
                   between institutions, wealth and humans.
                 </p>
                 <h4 className="font-semibold text-lg mb-3">
-                  Latest Innovation:
+                  Latest Innovations:
                 </h4>
+                <p className="text-lg mb-3">
+                  The{" "}
+                  <Link
+                    href="https://divizend.com"
+                    className="underline"
+                    target="_blank"
+                  >
+                    Divizend Companion
+                  </Link>{" "}
+                  is an intelligent all-in-one investment partner that unifies
+                  portfolio tracking, dividend insights, tax optimization, and
+                  market context into a simple, guided experience for confident
+                  long-term wealth building.
+                </p>
                 <p className="text-lg mb-6">
-                  A "data highway between the market and the state" that solves
-                  not only a long-fathomed EU directive, but also provides the
-                  base for more democratic, accessible communication structures
-                  between humans and institutions.
+                  <Link
+                    href="https://business.divizend.com/"
+                    className="underline"
+                    target="_blank"
+                  >
+                    Divizend MiKaDiv
+                  </Link>{" "}
+                  is a cloud-native regulatory infrastructure that transforms
+                  cross-border withholding tax compliance into an automated,
+                  auditable, and future-proof flow—uniting data, validation, and
+                  submission in one intelligent platform built for MiKaDiv today
+                  and EU FASTER tomorrow.
                 </p>
               </div>
               <div className="bg-muted rounded-xl p-8 h-full flex flex-col justify-center">
